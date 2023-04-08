@@ -29,12 +29,34 @@
           <a href="#Project">Project</a>
           <a href="#Contact">Contact Me</a>
         </nav>
-        <div class="mode" id="modenone">
-          <div class="change">
-            <div class="round">
-              <div class="icon" onclick="changeMode()">
-                <ion-icon name="moon-outline"></ion-icon>
-              </div>
+        <div class="hamb">
+          <ion-icon name="menu-outline" onclick="sideBar()"></ion-icon>
+          <div class="side">
+            <div class="cancel">
+              <ion-icon
+                name="close-outline"
+                onclick="cancelSideBar()"
+              ></ion-icon>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <ion-icon name="home-outline"></ion-icon>
+                  <a href="#Home">Home</a>
+                </li>
+                <li>
+                  <ion-icon name="hammer-outline"></ion-icon
+                  ><a href="#Skill">Skill</a>
+                </li>
+                <li>
+                  <ion-icon name="brush-outline"></ion-icon
+                  ><a href="#Project">Project</a>
+                </li>
+                <li>
+                  <ion-icon name="person-outline"></ion-icon
+                  ><a href="#Contact">Contact Me</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -191,7 +213,7 @@
           <div class="text">Project's</div>
           <div class="projectIdea">
             <div class="container">
-              <div>
+              <div class="box">
                 <div class="title">
                   <div class="circle complete"></div>
                   Online Voting System
@@ -200,14 +222,14 @@
                   HTML,TailwindCSS,JS,NodeJs,PostgreSQL
                 </div>
               </div>
-              <div>
+              <div class="box">
                 <div class="title">
                   <div class="circle complete"></div>
-                  AMS
+                  Appointment Management
                 </div>
                 <div class="lenguage">HTML,CSS,JS,NodeJs,PostgreSQL</div>
               </div>
-              <div>
+              <div class="box">
                 <div class="title">
                   <div class="circle complete"></div>
                   TODO Manager
@@ -216,35 +238,35 @@
               </div>
             </div>
             <div class="container">
-              <div>
+              <div class="box">
                 <div class="title">
                   <div class="circle pending"></div>
-                  SLMS
+                  Student Leave Management
                 </div>
                 <div class="lenguage">HTML,TailwindCSS,JS,NodeJs,MongoDB</div>
               </div>
-              <div>
+              <div class="box">
                 <div class="title">
                   <div class="circle pending"></div>
-                  Smarter-Task
+                  Smarter Tasks Builder
                 </div>
-                <div class="lenguage">React,TypeScript</div>
+                <div class="lenguage">React,TypeScript,PostgreSQL</div>
               </div>
             </div>
             <div class="container">
-              <div>
+              <div class="box">
                 <div class="title">
                   <div class="circle incomplete"></div>
                   Registeration Form Generator
                 </div>
                 <div class="lenguage">HTML,CSS,JS,NodeJs</div>
               </div>
-              <div>
+              <div class="box">
                 <div class="title">
                   <div class="circle incomplete"></div>
                   Bank Management System
                 </div>
-                <div class="lenguage">dJango,PostgreSQL</div>
+                <div class="lenguage">dJango,MongoDB</div>
               </div>
             </div>
           </div>

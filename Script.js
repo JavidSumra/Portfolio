@@ -44,34 +44,12 @@ let int4 = setInterval(() => {
   }
   counter4 += 1;
 }, 30);
-// let card = document.querySelector(".card");
-// function autoResize() {
-//   card.style.height = window.innerHeight + "px";
-// }
-// window.onresize = autoResize();
-let styleSheet =
-  document.styleSheets[1].cssRules[0].parentStyleSheet.cssRules[0];
-const changeMode = () => {
-  let getMode = document.querySelector(".icon");
-  let round = document.querySelector(".round");
-  let Main = document.querySelector(".main");
-  // console.log("Hello");
-  let length = round.classList.length;
-  // Main.classList.toggle("light");
-  if (length == 1) {
-    styleSheet.style[0] = "#ffffff";
-    styleSheet.style[1] = "#152028";
-    round.style.transform = "translateX(37px) rotate(360deg)";
-    round.classList.add("light");
-    round.style.backgroundColor = "#ffffff";
-    getMode.innerHTML =
-      ' <ion-icon name="sunny-outline" style="color:#000000;"></ion-icon>';
-  } else {
-    styleSheet.style[1] = "#ffffff";
-    styleSheet.style[0] = "#152028";
-    round.classList.remove("light");
-    round.style.transform = "translateX(0px) rotate(-360deg)";
-    round.style.backgroundColor = "#000000b3";
-    getMode.innerHTML = '<ion-icon name="moon-outline"></ion-icon>';
-  }
+
+const sideBar = () => {
+  let sidebar = document.querySelector(".side");
+  sidebar.style.display = "flex";
+};
+const cancelSideBar = () => {
+  let sidebar = document.querySelector(".side");
+  sidebar.style.display = "none";
 };
