@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="header">
+        <nav>
+          <a href="#Home">Home</a>
+          <a href="#Skill">Skill</a>
+          <a href="#Project">Project</a>
+          <a href="#Contact">Contact Me</a>
+        </nav>
+        <div class="mode" id="modenone">
+          <div class="change">
+            <div class="round">
+              <div class="icon" onclick="changeMode()">
+                <ion-icon name="moon-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card" id="Home">
+          <div class="int">
+            <div class="name">Hi,There</div>
+            <div class="name s">I'm Javid Sumra</div>
+            <div class="hobby">
+              Interested in
+              <span class="changeTxt">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="Skill">
+          <div class="text">Skill's</div>
+          <div class="skill">
+            <div class="outer">
+              <div class="inner">
+                <div id="number">87</div>
+              </div>
+            </div>
+            <span class="lang">C & C++</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              width="160px"
+              height="160px"
+            >
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+              </defs>
+              <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="skill">
+            <div class="outer">
+              <div class="inner">
+                <div id="number1">82</div>
+              </div>
+            </div>
+            <span class="lang">HTML&CSS</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              width="160px"
+              height="160px"
+            >
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                id="number_1"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="skill">
+            <div class="outer">
+              <div class="inner">
+                <div id="number2">85</div>
+              </div>
+            </div>
+            <span class="lang">JavaScript</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              width="160px"
+              height="160px"
+            >
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                id="number_2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="skill">
+            <div class="outer">
+              <div class="inner">
+                <div id="number3">80</div>
+              </div>
+            </div>
+            <span class="lang">Node Js</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              width="160px"
+              height="160px"
+            >
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                id="number_3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="skill">
+            <div class="outer">
+              <div class="inner">
+                <div id="number4">55</div>
+              </div>
+            </div>
+            <span class="lang">Java</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              width="160px"
+              height="160px"
+            >
+              <defs>
+                <linearGradient id="GradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                id="number_4"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="card" id="Project">
+          <div class="text">Project's</div>
+          <div class="projectIdea">
+            <div class="container">
+              <div>
+                <div class="title">
+                  <div class="circle complete"></div>
+                  Online Voting System
+                </div>
+                <div class="lenguage">
+                  HTML,TailwindCSS,JS,NodeJs,PostgreSQL
+                </div>
+              </div>
+              <div>
+                <div class="title">
+                  <div class="circle complete"></div>
+                  AMS
+                </div>
+                <div class="lenguage">HTML,CSS,JS,NodeJs,PostgreSQL</div>
+              </div>
+              <div>
+                <div class="title">
+                  <div class="circle complete"></div>
+                  TODO Manager
+                </div>
+                <div class="lenguage">HTML,TailwindCSS,JS,NodeJs,MongoDB</div>
+              </div>
+            </div>
+            <div class="container">
+              <div>
+                <div class="title">
+                  <div class="circle pending"></div>
+                  SLMS
+                </div>
+                <div class="lenguage">HTML,TailwindCSS,JS,NodeJs,MongoDB</div>
+              </div>
+              <div>
+                <div class="title">
+                  <div class="circle pending"></div>
+                  Smarter-Task
+                </div>
+                <div class="lenguage">React,TypeScript</div>
+              </div>
+            </div>
+            <div class="container">
+              <div>
+                <div class="title">
+                  <div class="circle incomplete"></div>
+                  Registeration Form Generator
+                </div>
+                <div class="lenguage">HTML,CSS,JS,NodeJs</div>
+              </div>
+              <div>
+                <div class="title">
+                  <div class="circle incomplete"></div>
+                  Bank Management System
+                </div>
+                <div class="lenguage">dJango,PostgreSQL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="Contact">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+          <li>
+            <a href="mailto: javidsumara987@gmail.com" target="_blank"
+              ><ion-icon name="mail-outline"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/JavidSumra" target="_blank"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/javid-sumra-66a896237"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://discordapp.com/users/Javid#8524" target="_blank"
+              ><ion-icon name="logo-discord"></ion-icon
+            ></a>
+          </li>
+        </ul>
+        <div class="credit">Created with &#10084; by Javid</div>
+      </footer>
+    </div>
+  </body>
+  <script src="./Script.js"></script>
+</html>
