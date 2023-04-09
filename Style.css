@@ -453,6 +453,38 @@ footer .wave#wave4 {
   grid-template-rows: 1fr 1fr 1fr;
   z-index: 8;
 }
+.icon ion-icon:hover {
+  font-size: 70px;
+  transition: all 1s;
+}
+.icon .react {
+  animation: rotate 6s linear infinite;
+}
+.icon .docker {
+  animation: moveX 6s linear infinite;
+}
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes moveX {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+}
 .icon ion-icon {
   display: flex;
   align-items: center;
