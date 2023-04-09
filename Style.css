@@ -282,14 +282,13 @@ circle {
 .card#Project {
   display: flex;
   justify-content: center;
-  /* background: rgb(21, 32, 40, 2); */
-  height: auto;
+  height: 100vh;
   align-items: center;
   flex-wrap: wrap;
   backdrop-filter: blur(8px);
 }
 .projectIdea {
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   margin: 10px auto;
@@ -513,6 +512,7 @@ footer .wave#wave4 {
 .icon .docker {
   animation: moveX 6s linear infinite;
 }
+
 @keyframes rotate {
   from {
     rotate: 0deg;
