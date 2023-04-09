@@ -121,9 +121,56 @@ a {
 }
 .card#Home .int .hobby {
   font-size: 40px;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
 }
-
+.wrapper {
+  display: inline-flex;
+}
+.wrapper .static-txts {
+  margin: auto;
+  color: var(--txt-clr);
+  font-weight: 400;
+}
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  font-weight: 500;
+  color: #fc6d6d;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid #fc6d6d;
+  background: var(--bg-clr);
+  animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
 .card#Skill {
   display: flex;
   justify-content: space-around;
@@ -137,7 +184,7 @@ a {
   position: absolute;
   top: 0;
   font-size: xx-large;
-  margin: 10px;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -432,6 +479,9 @@ footer .wave#wave4 {
     display: flex;
     flex-wrap: wrap;
     font-size: medium;
+  }
+  .hobby .wrapper {
+    font-size: 20px;
   }
 }
 
