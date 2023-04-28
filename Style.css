@@ -320,6 +320,11 @@ circle {
   background: #ff0000;
   box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
 }
+.lastBox {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+}
 footer {
   position: relative;
   width: 100%;
@@ -457,33 +462,6 @@ footer .wave#wave4 {
   }
 }
 
-@media (max-width: 600px) {
-  .header nav {
-    display: none;
-  }
-  .hamb {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: end;
-    justify-content: end;
-    width: 100%;
-  }
-  .box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .lenguage {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: medium;
-  }
-  .hobby .wrapper {
-    font-size: 20px;
-  }
-}
-
 .iconTwist {
   display: flex;
   align-items: center;
@@ -543,5 +521,37 @@ footer .wave#wave4 {
 @media (max-width: 1000px) {
   .iconTwist {
     width: 100vw;
+  }
+}
+@media (max-width: 600px) {
+  .header nav {
+    display: none;
+  }
+  .hamb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+  }
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .lenguage {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: medium;
+  }
+  .hobby .wrapper {
+    font-size: 20px;
+  }
+}
+
+@media (max-height: 550px) {
+  .project {
+    display: none;
   }
 }
