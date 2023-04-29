@@ -45,11 +45,4 @@ let int4 = setInterval(() => {
   counter4 += 1;
 }, 30);
 
-const sideBar = () => {
-  let sidebar = document.querySelector(".side");
-  sidebar.style.display = "flex";
-};
-const cancelSideBar = () => {
-  let sidebar = document.querySelector(".side");
-  sidebar.style.display = "none";
-};
+
