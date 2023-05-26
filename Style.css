@@ -321,6 +321,12 @@ circle {
   background: #ff0000;
   box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
 }
+.lenguage {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
 .lastBox {
   position: relative;
   overflow: hidden;
@@ -329,13 +335,14 @@ circle {
 footer {
   position: relative;
   width: 100%;
-  background: #3586ff;
+  background: #242222;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 50px 50px 0 0;
 }
 footer .social_icon {
   position: relative;
@@ -347,6 +354,24 @@ footer .social_icon {
 }
 footer .social_icon li {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #000;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #212121, 0 0 20px #212121, 0 0 30px #212121;
+}
+footer .social_icon li a {
+  display: flex;
+  align-items: center;
+}
+footer .social_icon li div {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
 footer .social_icon li a {
   font-size: 2em;
@@ -361,58 +386,12 @@ footer .social_icon li a:hover {
 
 footer .credit {
   font-size: 20px;
+  color: #fff;
 }
-
-footer .wave {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(wave.png);
-  background-size: 1000px 100px;
+.heart {
+  color: #ff0000;
+  font-size: xx-large;
 }
-footer .wave#wave1 {
-  z-index: 1000;
-  opacity: 1;
-  bottom: 0;
-  animation: wave 4s linear infinite;
-}
-footer .wave#wave2 {
-  z-index: 999;
-  opacity: 0.5;
-  bottom: 10px;
-  animation: wave2 4s linear infinite;
-}
-footer .wave#wave3 {
-  z-index: 1000;
-  opacity: 0.2;
-  bottom: 15px;
-  animation: wave 3s linear infinite;
-}
-footer .wave#wave4 {
-  z-index: 999;
-  opacity: 0.7;
-  bottom: 20px;
-  animation: wave2 3s linear infinite;
-}
-@keyframes wave {
-  0% {
-    background-position-x: 1000px;
-  }
-  100% {
-    background-position-x: 0px;
-  }
-}
-@keyframes wave2 {
-  0% {
-    background-position-x: 0px;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
-}
-
 .navbar {
   display: none;
   color: #000;
@@ -520,6 +499,7 @@ footer .wave#wave4 {
     display: flex;
     flex-wrap: wrap;
     font-size: medium;
+    text-align: center;
   }
   .hobby .wrapper {
     font-size: 20px;

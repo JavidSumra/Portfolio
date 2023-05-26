@@ -45,4 +45,6 @@ let int4 = setInterval(() => {
   counter4 += 1;
 }, 30);
 
-
+const moveToLink = (link) => {
+  window.location.href = `${link}`;
+};
